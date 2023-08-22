@@ -1,30 +1,33 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+    <div id="app">
+        <h1>Добро пожаловать в приложение "Разделение счета"</h1>
+        <router-view></router-view>
+
+        <!-- Добавь другие компоненты и логику переключения экранов здесь -->
+    </div>
 </template>
 
+<script>
+export default{
+    name: 'App'
+}
+</script>
+
 <style lang="scss">
+html{
+    background-color: #feefdc;
+    font-family: 'Montserrat', sans-serif;
+
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #0a1f2e;
+
 }
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
 </style>
+
