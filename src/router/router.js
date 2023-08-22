@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import AddPersons from "@/components/addPersons.vue";
 import AddItems from "@/components/addItems.vue";
+import ResultPage from "@/components/resultPage.vue";
 
 
 const routes = [
@@ -14,6 +15,10 @@ const routes = [
     path: '/add-items',
     name: 'AddItems',
     component: AddItems
+  },
+  {
+    path: '/result',
+    component: ResultPage
   },
 
 ]
